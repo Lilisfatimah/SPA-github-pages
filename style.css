@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nama {
+    background-color: #f8ddc2;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header h1 {
+    float: left;
+    padding: 15px 0;
+    color: rgb(41, 37, 33);
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    display: inline-block;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: bold
+}
+
+header ul li a {
+    padding: 25px 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(41, 37, 33);
+}
+
+header ul li a:hover {
+    background-color: #b09171;
+    color: wheat ;
+}
+
+span {
+        color: rgb(140, 70, 0);
+        font-family: 'Rochester', cursive;
+        font-size: 45px;
+}
+
+.active {
+    background-color: #b09171;
+    color: wheat;
+}
+
+.banner {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(boneka.jpg);
+    background-size: cover;
+    font-family: 'Balsamiq Sans', cursive;
+    position: relative;
+}
+
+.banner:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 143, 31, 0.208);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    height: 200px;
+    border: 8px solid rgb(41, 37, 33);
+}
+
+.banner h1 {
+    text-align: center;
+}
+
+.banner p {
+    text-align: center;
+}
+
+.project {
+    height: 90vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-image: url(abstrak.jpg);
+    background-size: cover;
+    font-family: 'Balsamiq Sans', cursive;
+    position: relative;
+}
+
+.project:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 190, 69, 0.244);
+}
+
+.project,
+.contact {
+    padding-bottom: 100px;
+}
+
+.tombol { 
+    text-align: center;
+    color:  rgb(41, 37, 33);
+    text-decoration: none;
+    z-index: 1;
+}
+
+.tombol h1 {
+    line-height: 90px;
+    font-size: x-large;
+    color:  rgb(41, 37, 33);
+    z-index: 1;
+}
+.tombol a:hover {
+    color: #bc854f;
+}
+
+.contact {
+    height: 90vh;
+    display: flex;
+    text-align: center;
+    background-image: url(boneka.jpg);
+    background-size: cover;
+    font-family: 'Balsamiq Sans', cursive;
+    position: relative;
+}
+
+.contact:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(255, 143, 31, 0.208);
+}
+
+.contact h1 {
+    z-index: 1;
+    line-height: 90px;
+    font-size: x-large;
+    color:  rgb(41, 37, 33);
+}
+
+.label {
+    background-color: #b09171;
+    font-family: 'Balsamiq Sans', cursive;
+    color: white;
+    padding: 50px 0;
+}
+
+.button {
+    z-index: 1;
+    margin-bottom: 5px;
+    background-color: rgb(41, 37, 33);
+    font-family: 'Balsamiq Sans', cursive;
+    border-radius: 10px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #f8ddc2;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 100;
+    height: 40px;
+    list-style: none;
+    margin: 5px;
+    outline: none;
+    padding: 10px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+footer {
+    padding: 10px;
+    background-color:  rgb(41, 37, 33);
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    header h1 {
+        text-align: center;
+        float: none;
+    }
+
+    header ul {
+        text-align: center;
+        float: none;
+    }
+}
